@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/add_nik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:editable="false"
+        android:hint="NIK (Nomor Induk Kependudukan)"/>
+
+    <EditText
+        android:id="@+id/add_nokk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_nik"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Nomor KK(Kartu Keluarga)"/>
+
+    <EditText
+        android:id="@+id/add_namalengkap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_nokk"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Nama Lengkap"/>
+
+
+    <TextView
+        android:id="@+id/textViewJK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="8dp"
+        android:text="Jenis Kelamin"
+        android:layout_below="@id/add_namalengkap"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupJK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/textViewJK">
+
+        <RadioButton
+            android:id="@+id/radioButtonLakiLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPerempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Perempuan"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/add_tempatLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Tempat Lahir"
+        android:layout_below="@id/radioGroupJK"/>
+
+    <EditText
+        android:id="@+id/add_tanggalLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_tempatLahir"
+        android:layout_marginHorizontal="10dp"
+        android:layout_toLeftOf="@id/datePicker_button"
+        android:editable="false"
+        android:hint="Tanggal Lahir"/>
+
+    <Button
+        android:id="@+id/datePicker_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/add_tempatLahir"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/calendar_icon"
+        android:clickable="true"/>
+
+    <Spinner
+        android:id="@+id/agamaDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/datePicker_button"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Spinner
+        android:id="@+id/pendidikanDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/agamaDropdown"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Spinner
+        android:id="@+id/jenisPekerjaanDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/pendidikanDropdown"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Spinner
+        android:id="@+id/namaKelurahanDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/jenisPekerjaanDropdown"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Spinner
+        android:id="@+id/nomorRWDropdown"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/namaKelurahanDropdown"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Spinner
+        android:id="@+id/nomorRTDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/namaKelurahanDropdown"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/nomorRWDropdown"
+        android:layout_marginHorizontal="10dp"/>
+
+    <Spinner
+        android:id="@+id/jabatanDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/nomorRWDropdown"
+        android:layout_marginHorizontal="10dp"/>
+
+    <EditText
+        android:id="@+id/tanggalDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Tempat Lahir"
+        android:editable="false"
+        android:layout_below="@id/jabatanDropdown"/>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggalDaftar"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="Perbarui"
+        android:onClick="perbaruiPenduduk"/>
+
+</RelativeLayout>

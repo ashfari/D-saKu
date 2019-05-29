@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/skKecamatan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="KECAMATAN" />
+
+    <TextView
+        android:id="@+id/skKecamatan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/skKecamatan"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skKelurahan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skKecamatan"
+        android:layout_marginLeft="20dp"
+        android:text="KELURAHAN" />
+
+    <TextView
+        android:id="@+id/skKelurahan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skKelurahan"
+        android:layout_below="@id/skKecamatan1"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skRTRW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/skKelurahan"
+        android:layout_marginHorizontal="20dp"
+        android:text="RT.00 / RW.00" />
+
+    <TextView
+        android:id="@+id/skKabupaten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skRTRW"
+        android:layout_marginHorizontal="20dp"
+        android:text="      Kabupaten Malang" />
+
+    <TextView
+        android:id="@+id/skJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skKabupaten"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="20dp"
+        android:text="SURAT PENGANTAR" />
+
+    <TextView
+        android:id="@+id/skNomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skJudul"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="20dp"
+        android:text="No. :" />
+
+    <TextView
+        android:id="@+id/skParagraph1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skNomor"
+        android:layout_marginHorizontal="20dp"
+        android:text="      Yang bertanda tangan di bawah ini, Pengurus Rt.00 / Rw.00 Kelurahan -, Kecamatan - dengan ini menerangkan bahwa:" />
+
+    <TextView
+        android:id="@+id/skNama"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skParagraph1"
+        android:layout_marginLeft="40dp"
+        android:text="Nama" />
+
+    <TextView
+        android:id="@+id/skNama1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skNama"
+        android:layout_below="@+id/skParagraph1"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skTTL"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skNama"
+        android:layout_marginLeft="40dp"
+        android:text="Tempat, Tgl.Lahir" />
+
+    <TextView
+        android:id="@+id/skTTL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skTTL"
+        android:layout_below="@+id/skNama"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skJenisKelamin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skTTL"
+        android:layout_marginLeft="40dp"
+        android:text="Jenis Kelamin" />
+
+    <TextView
+        android:id="@+id/skJenisKelamin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skJenisKelamin"
+        android:layout_below="@+id/skTTL"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skPekerjaan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skJenisKelamin"
+        android:layout_marginLeft="40dp"
+        android:text="Pekerjaan" />
+
+    <TextView
+        android:id="@+id/skPekerjaan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skPekerjaan"
+        android:layout_below="@+id/skJenisKelamin"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skKK"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skPekerjaan"
+        android:layout_marginLeft="40dp"
+        android:text="No. KTP./KK." />
+
+    <TextView
+        android:id="@+id/skKK1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skKK"
+        android:layout_below="@+id/skPekerjaan"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skKewarganegaraan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skKK"
+        android:layout_marginLeft="40dp"
+        android:text="Kewarganegaraan" />
+
+    <TextView
+        android:id="@+id/skKewarganegaraan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skPekerjaan"
+        android:layout_below="@+id/skKK"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skAgama"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skKewarganegaraan"
+        android:layout_marginLeft="40dp"
+        android:text="Agama" />
+
+    <TextView
+        android:id="@+id/skAgama1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skAgama"
+        android:layout_below="@+id/skKewarganegaraan"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skAlamat"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skAgama"
+        android:layout_marginLeft="40dp"
+        android:text="Alamat" />
+
+    <TextView
+        android:id="@+id/skAlamat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skAlamat"
+        android:layout_below="@+id/skAgama"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skAlamatRTRW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skAlamat"
+        android:layout_below="@+id/skAlamat1"
+        android:layout_marginRight="20dp"
+        android:text="  Rt.00/Rw.00" />
+
+    <TextView
+        android:id="@+id/skKeperluan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skAlamatRTRW"
+        android:layout_marginLeft="20dp"
+        android:text="Maksud/keperluan" />
+
+    <TextView
+        android:id="@+id/skKeperluan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skAlamatRTRW"
+        android:layout_toRightOf="@id/skKeperluan"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skCurrentdate"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skKeperluan"
+        android:layout_marginRight="20dp"
+        android:text="Malang, dd-MM-yyyy" />
+
+    <TextView
+        android:id="@+id/skMengetahuiRW"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skCurrentdate"
+        android:layout_marginLeft="20dp"
+        android:text="Mengetahui Ketua Rw.00" />
+
+    <TextView
+        android:id="@+id/skStempelRW"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skMengetahuiRW"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        android:text="RW.00 KELURAHAN -" />
+
+    <TextView
+        android:id="@+id/skNamaRW"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skStempelRW"
+        android:layout_marginLeft="20dp"
+        android:text="Nama Ketua RW" />
+
+    <TextView
+        android:id="@+id/skMengetahuiRT"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skCurrentdate"
+        android:layout_marginRight="20dp"
+        android:text="Ketua Rt.00 Rw.00" />
+
+    <TextView
+        android:id="@+id/skStempelRT"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skMengetahuiRT"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginRight="20dp"
+        android:text="RT.00/RW.00 KELURAHAN -" />
+
+    <TextView
+        android:id="@+id/skNamaRT"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skStempelRT"
+        android:layout_marginRight="20dp"
+        android:text="Nama Ketua RT" />
+
+    <Button
+        android:id="@+id/beriStempelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@id/skNamaRW"
+        android:layout_marginTop="20dp"
+        android:onClick="beriStempel"
+        android:text="BERI STEMPEL" />
+
+    <Button
+        android:id="@+id/kirimRWButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@id/beriStempelButton"
+        android:onClick="kirimRW"
+        android:text="Kirim ke RW" />
+
+    <Button
+        android:id="@+id/kirimKelurahanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@id/beriStempelButton"
+        android:onClick="kirimKelurahan"
+        android:text="Kirim ke Kelurahan" />
+
+</RelativeLayout>

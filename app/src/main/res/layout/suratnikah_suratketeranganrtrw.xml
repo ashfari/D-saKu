@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <EditText
+        android:id="@+id/add_namalengkap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:editable="false"
+        android:hint="Nama Lengkap" />
+
+    <EditText
+        android:id="@+id/add_nik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jenisPekerjaanDropdown"
+        android:layout_marginHorizontal="10dp"
+        android:editable="false"
+        android:hint="Nomor KK/KTP" />
+
+
+    <EditText
+        android:id="@+id/add_namacalon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomorRTDropdown"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Nama Calon *" />
+
+    <TextView
+        android:id="@+id/textViewJK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_alamat"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="8dp"
+        android:editable="false"
+        android:text="Jenis Kelamin" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupJK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewJK"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonLakiLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Laki-laki" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPerempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:clickable="false"
+            android:text="Perempuan" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/add_tempatLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_namalengkap"
+        android:layout_marginHorizontal="10dp"
+        android:editable="false"
+        android:hint="Tempat Lahir" />
+
+    <EditText
+        android:id="@+id/add_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_tanggalLahir"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Alamat *" />
+
+    <EditText
+        android:id="@+id/add_tanggalLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_tempatLahir"
+        android:layout_marginHorizontal="10dp"
+        android:layout_toLeftOf="@id/datePicker_button"
+        android:editable="false"
+        android:hint="Tanggal Lahir" />
+
+    <Button
+        android:id="@+id/datePicker_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/add_tempatLahir"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/calendar_icon"
+        android:clickable="false"/>
+
+    <Spinner
+        android:id="@+id/agamaDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kewarganegaraan"
+        android:layout_marginHorizontal="10dp"
+        android:spinnerMode="dropdown"
+        tools:listitem="Agama"/>
+
+    <Spinner
+        android:id="@+id/jenisPekerjaanDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupJK"
+        android:layout_marginHorizontal="10dp"
+        android:spinnerMode="dropdown"
+        android:clickable="false"
+        tools:listitem="Jenis Pekerjaan"/>
+
+    <Spinner
+        android:id="@+id/namaKelurahanDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agamaDropdown"
+        android:layout_marginHorizontal="10dp"
+        android:spinnerMode="dropdown"
+        android:clickable="false"
+        tools:listitem="Nama Kelurahan" />
+
+    <Spinner
+        android:id="@+id/kewarganegaraan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_nik"
+        android:layout_marginHorizontal="10dp"
+        android:spinnerMode="dropdown"
+        android:clickable="false"
+        tools:listitem="Kewarganegaraan" />
+
+    <Spinner
+        android:id="@+id/nomorRWDropdown"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/namaKelurahanDropdown"
+        android:layout_marginHorizontal="10dp"
+        android:clickable="false"
+        tools:listitem="Nomor RW"/>
+
+    <Spinner
+        android:id="@+id/nomorRTDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/namaKelurahanDropdown"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/nomorRWDropdown"
+        android:layout_marginHorizontal="10dp"
+        android:clickable="false"
+        tools:listitem="Nomer RT" />
+
+    <Button
+        android:id="@+id/kirimButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_namacalon"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="kirimKeRT"
+        android:text="Kirim ke RT" />
+
+</RelativeLayout>

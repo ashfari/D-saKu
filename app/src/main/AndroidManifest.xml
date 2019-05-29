@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.d_saku">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/dsaku_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/dsaku_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".GUI.AddPendudukActivity"
+            android:label="AddPenduduk Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.CetakSuratActivity"
+            android:label="Cetak Surat Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.DataPendudukActivity"
+            android:label="Data User Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.HomeActivity"
+            android:label="Login Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.JadwalActivity"
+            android:label="Jadwal Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.JadwalBuatActivity"
+            android:label="Buat Jadwal Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.JadwalListActivity"
+            android:label="Jadwal List Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.JadwalNotifikasiActivity"
+            android:label="Jadwal Notifikasi Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.LaporanActivity"
+            android:label="Laporan Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.ListSuratNikahActivity"
+            android:label="List Surat Nikah Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GUI.PemberitahuanActivity"
+            android:label="Pemberitahuan Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.ProsedurActivity"
+            android:label="Prosedur Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.RegisterActivity"
+            android:label="Register Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.SuratNikahActivity"
+            android:label="Surat Nikah Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.SuratNikahLangkah1Activity"
+            android:label="Surat Nikah Langkah 1 Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.SuratNikahLangkah1VerifyActivity"
+            android:label="Surat Nikah Langkah 1 Verify RT Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.UpdatePendudukActivity"
+            android:label="Update Penduduk Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.VerifikasiActivity"
+            android:label="Verifikasi Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.VerifikasiDataUserActivity"
+            android:label="Verifikasi Data User Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.VerifikasiKirimRequestActivity"
+            android:label="Verifikasi Kirim Request Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.VerifikasiListUserActivity"
+            android:label="Verifikasi List User Activity"
+            >
+        </activity>
+        <activity android:name=".GUI.VerifikasiNotifikasiActivity"
+            android:label="Verifikasi Notifikasi Activity"
+            >
+        </activity>
+
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

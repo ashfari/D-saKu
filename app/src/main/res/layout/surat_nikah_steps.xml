@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pengurusanSuratNikah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="Langkah-langkah pengurusan Surat Nikah"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/suratNikah1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pengurusanSuratNikah"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:text="1. Datang ke RT, RW setempat, minta surat pengantar hendak menikah untuk ke kelurahan"
+        android:textStyle="bold"
+        android:textColor="@color/colorLink"
+        android:onClick="gotoLangkah1"/>
+
+    <TextView
+        android:id="@+id/suratNikah2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/suratNikah1"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:text="2. Di kelurahan minta surat pengantar pernikahan : surat N1 (surat keterangan untuk menikah), N2 (surat keterangan asal usul), N4(surat keterangan orang tua) dan bila dibawah 21 tahun ditambah N5 surat izin menikah dari orang tua. Ditambah N6 bila duda mati. Bila kelurahan tidak menyediakan blangko N, blangko tersebut bisa diminta di Kantor KUA setempat."/>
+
+    <TextView
+        android:id="@+id/suratNikah3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/suratNikah2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:text="3. Berkas-berkas surat pengantar dari kelurahan dibawa ke KUA setempat."/>
+
+    <TextView
+        android:id="@+id/suratNikah4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/suratNikah3"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:text="4. Bila pernikahan dilakukan diluar wilayah kerja KUA dimana dia menetap maka calon pengantin dengan membawa seluruh berkas yang sudah disahkan di kelurahan ke kantor kecamatan sebagai pengantar ke KUA setempat dan dari KUA setempat maka akan dikeluarkan Surat Keterangan Rekomendasi Nikah ke keluar daerah, atau yang biasa disebut Surat Numpang Nikah."/>
+
+    <TextView
+        android:id="@+id/suratNikah5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/suratNikah4"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:text="5. Surat Rekomendasi Nikah dilampiri dengan kemudian dibawa dan dibendel ke KUA tempat pernikahan dilangsungkan beserta data pengantin perempuan. Di KUA ini akan dilihat apakah pada hari, tanggal dan jam akan dilaksanakan akad nikah tersebut ada calon pengantin lain yang lebih dulu mendaftar atau tidak, biasanya calon pengantin akan dibekali nomor telepon KUA setempat dan Penghulu yang akan bertugas menikahkan, fungsinya adalah untuk konfirmasi kembali."/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Logout"
+        android:onClick="doingLogout"/>
+
+    <Button
+        android:id="@+id/kirimRequestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/logoutButton"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="50dp"
+        android:text="Kirim Request"
+        android:onClick="gotoKirimRequest"/>
+
+    <Button
+        android:id="@+id/dataUserButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/kirimRequestButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:text="Data User"
+        android:onClick="gotoDataUser"/>
+
+</RelativeLayout>

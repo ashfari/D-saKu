@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <Spinner
+        android:id="@+id/keJabatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:spinnerMode="dropdown"
+        tools:listitem="Dikirim ke-"/>
+
+    <EditText
+        android:id="@+id/tanggalJadwal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/keJabatan"
+        android:layout_marginHorizontal="10dp"
+        android:layout_toLeftOf="@id/datePicker_button"
+        android:editable="false"
+        android:hint="Tanggal Jadwal" />
+
+    <Button
+        android:id="@+id/datePicker_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/keJabatan"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/calendar_icon"
+        android:clickable="true"/>
+
+    <EditText
+        android:id="@+id/kepentinganJadwal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggalJadwal"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Kepentingan Jadwal"/>
+
+    <TextView
+        android:id="@+id/aturJamText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/kepentinganJadwal"
+        android:text="Atur Waktu"/>
+
+    <TimePicker
+        android:id="@+id/waktuJadwal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/aturJamText"/>
+
+    <Button
+        android:id="@+id/kirimButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waktuJadwal"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Kirim Jadwal"
+        android:onClick="kirimJadwal"/>
+
+</RelativeLayout>

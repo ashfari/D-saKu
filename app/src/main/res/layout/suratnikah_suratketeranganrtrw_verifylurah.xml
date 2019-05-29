@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/suratPengantarNikah"
+    android:background="@color/colorWhite"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/skKelurahan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="KANTOR DESA/KELURAHAN" />
+
+    <TextView
+        android:id="@+id/skKelurahan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/skKelurahan"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skKecamatan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skKelurahan"
+        android:layout_marginLeft="20dp"
+        android:text="KECAMATAN" />
+
+    <TextView
+        android:id="@+id/skKecamatan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skKecamatan"
+        android:layout_below="@id/skKelurahan"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skKabupaten"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skKecamatan"
+        android:layout_marginLeft="20dp"
+        android:text="KABUPATEN / KOTA" />
+
+    <TextView
+        android:id="@+id/skKabupaten1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skKabupaten"
+        android:layout_below="@id/skKecamatan"
+        android:layout_marginRight="20dp"
+        android:text=": KABUPATEN MALANG" />
+
+    <TextView
+        android:id="@+id/skJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skKabupaten"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="SURAT KETERANGAN UNTUK NIKAH" />
+
+    <TextView
+        android:id="@+id/skNomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skJudul"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="20dp"
+        android:text="No. :" />
+
+    <TextView
+        android:id="@+id/skParagraph1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skNomor"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Yang bertanda tangan di bawah ini menerangkan dengan sesungguhnya bahwa:" />
+
+    <TextView
+        android:id="@+id/skNama"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skParagraph1"
+        android:layout_marginLeft="40dp"
+        android:text="1. Nama lengkap dan alias" />
+
+    <TextView
+        android:id="@+id/skNama1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skNama"
+        android:layout_below="@+id/skParagraph1"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skJenisKelamin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skNama"
+        android:layout_marginLeft="40dp"
+        android:text="2. Jenis kelamin" />
+
+    <TextView
+        android:id="@+id/skJenisKelamin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skJenisKelamin"
+        android:layout_below="@+id/skNama"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skTTL"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skJenisKelamin"
+        android:layout_marginLeft="40dp"
+        android:text="3. Tempat dan tanggal lahir" />
+
+    <TextView
+        android:id="@+id/skTTL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skTTL"
+        android:layout_below="@+id/skJenisKelamin"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skKewarganegaraan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skTTL"
+        android:layout_marginLeft="40dp"
+        android:text="4. Warganegara" />
+
+    <TextView
+        android:id="@+id/skKewarganegaraan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skKewarganegaraan"
+        android:layout_below="@+id/skTTL"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skAgama"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skKewarganegaraan"
+        android:layout_marginLeft="40dp"
+        android:text="5. Agama" />
+
+    <TextView
+        android:id="@+id/skAgama1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skAgama"
+        android:layout_below="@+id/skKewarganegaraan"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skPekerjaan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skAgama"
+        android:layout_marginLeft="40dp"
+        android:text="6. Pekerjaan" />
+
+    <TextView
+        android:id="@+id/skPekerjaan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skPekerjaan"
+        android:layout_below="@+id/skAgama"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skAlamat"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skPekerjaan"
+        android:layout_marginLeft="40dp"
+        android:text="7. Tempat tinggal" />
+
+    <TextView
+        android:id="@+id/skAlamat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skAlamat"
+        android:layout_below="@+id/skPekerjaan"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skAnakDari"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skAlamat"
+        android:layout_marginLeft="40dp"
+        android:text="8. Bin/binti" />
+
+    <TextView
+        android:id="@+id/skAnakDari1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skAnakDari"
+        android:layout_below="@+id/skAlamat"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+    android:id="@+id/skStatusPerkawinan"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/skAnakDari"
+    android:layout_marginLeft="40dp"
+    android:text="9. Status Perkawinan" />
+
+    <TextView
+        android:id="@+id/skStatusPerkawinan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skStatusPerkawinan"
+        android:layout_below="@+id/skAnakDari"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skStatusPerkawinanPria"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skStatusPerkawinan"
+        android:layout_marginLeft="60dp"
+        android:text="a. Pria" />
+
+    <TextView
+        android:id="@+id/skStatusPerkawinanPria1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skStatusPerkawinanPria"
+        android:layout_below="@+id/skStatusPerkawinan"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skStatusPerkawinanWanita"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skStatusPerkawinanPria"
+        android:layout_marginLeft="60dp"
+        android:text="b. Wanita" />
+
+    <TextView
+        android:id="@+id/skStatusPerkawinanWanita1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skStatusPerkawinanWanita"
+        android:layout_below="@+id/skStatusPerkawinanPria"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skNamaPasanganTerdahulu"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skStatusPerkawinanWanita"
+        android:layout_marginLeft="40dp"
+        android:text="10. Nama istri / suami terdahulu" />
+
+    <TextView
+        android:id="@+id/skNamaPasanganTerdahulu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/skNamaPasanganTerdahulu"
+        android:layout_below="@+id/skStatusPerkawinanWanita"
+        android:layout_marginRight="20dp"
+        android:text=":" />
+
+    <TextView
+        android:id="@+id/skParagraph2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skNamaPasanganTerdahulu"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Demikianlah surat keterangan ini dibuat dengan mengingat sumpah jabatan dan untuk digunankan seperlunya." />
+
+    <TextView
+        android:id="@+id/skCurrentdate"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skParagraph2"
+        android:layout_marginRight="20dp"
+        android:text="Malang, dd-MM-yyyy" />
+
+    <TextView
+        android:id="@+id/skMengetahuiLurah"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skCurrentdate"
+        android:layout_marginRight="20dp"
+        android:text="Kelurahan -" />
+
+    <TextView
+        android:id="@+id/skStempelLurah"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skMengetahuiLurah"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginRight="20dp"
+        android:text="PEMERINTAH KELURAHAN -" />
+
+    <TextView
+        android:id="@+id/skNamaLurah"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skStempelLurah"
+        android:layout_marginRight="20dp"
+        android:text="Nama Lurah" />
+
+    <Button
+        android:id="@+id/beriStempelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@id/skNamaLurah"
+        android:layout_marginTop="20dp"
+        android:onClick="beriStempel"
+        android:text="BERI STEMPEL" />
+
+    <Button
+        android:id="@+id/cetakSuratButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@id/beriStempelButton"
+        android:onClick="cetakSurat"
+        android:text="Cetak Surat" />
+
+</RelativeLayout>

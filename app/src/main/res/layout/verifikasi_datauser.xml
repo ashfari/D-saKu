@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="30dp"
+        android:editable="false"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/usernameData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:editable="false"
+        android:layout_below="@id/usernameText"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:editable="false"
+        android:layout_below="@id/usernameData"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/passwordData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:editable="false"
+        android:layout_below="@id/passwordText"
+        android:text="Password" />
+
+    <TextView
+        android:id="@+id/nikText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:editable="false"
+        android:layout_below="@id/passwordData"
+        android:text="No. KTP / NIK" />
+
+    <EditText
+        android:id="@+id/nikData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:editable="false"
+        android:layout_below="@id/nikText"
+        android:text="NIK" />
+
+</RelativeLayout>
